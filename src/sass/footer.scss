@@ -1,0 +1,39 @@
+.footer {
+  background-color: #f7f7f7;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  min-width: 320px;
+}
+
+.copyright {
+  text-align: center;
+  min-width: 320px;
+  padding-left: 46px;
+  padding-right: 46px;
+
+  &__svg {
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    fill: #ff6b08;
+  }
+  &__span {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  & p {
+    display: inline-block;
+    color: #545454;
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+      & {
+        font-size: 16px;
+      }
+    }
+
+
+  }
+}

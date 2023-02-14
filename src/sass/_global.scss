@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container {
+  min-width: 320px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
