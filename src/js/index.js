@@ -2,11 +2,13 @@ import { API_KEY } from './apiKey';
 import { fetchJsonResponse } from './responseJsonFetch';
 import { moviesListRender } from './moviesListRender';
 import { paginationRender, paginationDestroy } from './pagination';
+import { closeModal, modalMovie } from './modalMovie';
 
 const searchBtn = document.querySelector('.search__button');
 const searchInput = document.querySelector('.search__input');
 const pagination = document.querySelector('.pagination');
 const movies = document.querySelector('.movies');
+const moviesGallery = document.querySelector('.movies__list')
 
 let actualPage = 1;
 
@@ -103,3 +105,6 @@ pagination.addEventListener('click', evt => {
     }
   }
 });
+
+moviesGallery.addEventListener('click', modalMovie);
+closeModal();
