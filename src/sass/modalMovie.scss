@@ -23,7 +23,9 @@
     width: 100vw;
   }
 }
-
+.noscroll {
+  overflow-y: hidden;
+}
 .modal__window {
   position: relative;
   width: 100%;
