@@ -2,10 +2,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   padding: 20px;
-  display: flex;
   justify-content: center;
   align-items: center;
   overflow-y: auto;
@@ -17,6 +16,11 @@
   &--is-hidden {
     visibility: hidden;
     opacity: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 100vw;
   }
 }
 
@@ -85,7 +89,7 @@
   }
 
   @media screen and (min-width: 1024px) {
-    width: 396px;
+    width: 326px;
   }
 }
 
