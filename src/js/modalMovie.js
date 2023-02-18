@@ -162,8 +162,10 @@ const clickClose = e => {
 export const viewModal = isShow => {
   if (isShow) {
     overlay.classList.remove('overlay--is-hidden');
+    overlay.classList.add('noscroll');
     return;
   }
+  overlay.classList.remove('noscroll');
   overlay.classList.add('overlay--is-hidden');
   btn.watched.removeEventListener('click', addToLocalStorage);
   btn.queue.removeEventListener('click', addToLocalStorage);
