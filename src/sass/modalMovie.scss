@@ -24,7 +24,7 @@
   }
 }
 .noscroll {
-  overflow-y: hidden;
+  overscroll-behavior-y: hidden;
 }
 .modal__window {
   position: relative;
